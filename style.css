@@ -1,0 +1,319 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	max-width: 768px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.header,
+.footer {
+	width: 100%;
+	height: 90px;
+	background: #C4C4C4;
+	font-size: 24px;
+	color: #000000;
+	text-align: center;
+	line-height: 90px;
+}
+
+.content {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding-top: 10px;
+}
+
+.first,
+.second,
+.third,
+.fourth,
+.fifth {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	justify-content: space-between;
+	padding-bottom: 10px;
+	box-sizing: border-box;
+}
+
+.third {
+	flex-wrap: nowrap;
+}
+
+.small-block {
+	width: 48.4%;
+	height: 155px;
+	display: flex;
+	align-items: flex-end;
+	padding: 15px;
+	box-sizing: border-box;
+}
+
+.big-block {
+	width: 100%;
+	height: 155px;
+	display: flex;
+	align-items: flex-end;
+	padding: 15px;
+	box-sizing: border-box;
+}
+
+.first .staff,
+.test {
+	background: #E8EBED;
+}
+
+.conformism {
+	width: 100%;
+	background: #E8EBED;
+	margin-top: 10px;
+}
+
+.second .staff {
+	background: #FEBF26;
+}
+
+.introjection {
+	background: #90BCE8;
+}
+
+.genius {
+	width: 66vw;
+	height: 66vw;
+	max-width: 492px;
+	max-height: 492px;
+	font-size: 20px;
+	line-height: 26px;
+	text-align: center;
+	color: #FFFFFF;
+
+	overflow: auto;
+	background: #A2A9B7;
+	margin-right: 10px;
+	padding: 20px 20px 2px 9px;
+	box-sizing: border-box;
+}
+
+.generous {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-between;
+	width: 32vw;
+}
+
+.feeling,
+.moreno {
+	width: 31.9vw;
+	height: 31.9vw;
+	max-width: 241px;
+	max-height: 241px;
+	background: #A2A9B7;
+	font-size: 14px;
+	line-height: 18px;
+	color: #FFFFFF;
+	display: flex;
+	align-items: flex-end;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.fourth {
+	width: 100%;
+}
+
+.however,
+.point,
+.lead {
+	background: #FFAA87;
+}
+
+.however {
+	margin-bottom: 10px;
+}
+
+.length {
+	background: #C7ABD4;
+}
+
+.incredible {
+	background: #F55E62;
+}
+
+.hidden {
+	display: none;
+}
+
+@media (min-width: 480px) {
+	.third {
+		order: 1;
+	}
+
+	.first {
+		order: 2;
+	}
+
+	.second {
+		order: 3;
+	}
+
+	.hidden {
+		order: 4;
+	}
+
+	.fifth {
+		order: 5;
+	}
+
+	.fourth {
+		order: 6;
+	}
+
+	.hidden {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		max-width: 748px;
+		padding-bottom: 10px;
+	}
+
+	.hidden .feeling,
+	.hidden .genius {
+		background-color: #E3EBD3;
+		color: #000000;
+	}
+
+	.hidden .genius {
+		margin-right: 0px;
+		font-size: 14px;
+		line-height: 16px;
+		padding: 15px;
+		text-align: justify;
+	}
+
+	.hidden .moreno {
+		position: relative;
+		padding: 0px;
+	}
+
+	.our {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		background-image: url(./img/image.png);
+		background-repeat: no-repeat;
+		background-position: center center;
+		display: flex;
+		align-items: flex-end;
+		padding: 10px;
+		box-sizing: border-box;
+	}
+
+	.hidden .our:hover {
+		filter: blur(3px);
+	}
+
+	.mark {
+		position: absolute;
+		top: 35%;
+		left: 35%;
+		border: #FFFFFF;
+		width: 25%;
+		height: 25%;
+		border-radius: 50%;
+		background-size: 25%px;
+		background-color: #FFFFFF;
+		background-image: url(./img/!.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		display: none;
+	}
+
+	.moreno:hover .mark {
+		display: block;
+	}
+
+	ul.leaders {
+		max-width: 40em;
+		padding: 0;
+		overflow-x: hidden;
+		list-style: none;
+	}
+
+	ul.leaders li:after {
+		float: left;
+		width: 0;
+		white-space: nowrap;
+		content:
+			". . . . . . . . . . . . . . . . . . . . "
+			". . . . . . . . . . . . . . . . . . . . "
+			". . . . . . . . . . . . . . . . . . . . "
+			". . . . . . . . . . . . . . . . . . . . "
+	}
+
+	ul.leaders span:first-child {
+		padding-right: 0.33em;
+		background-color: #E3EBD3;
+	}
+
+	ul.leaders li:nth-child(2) span:last-child {
+		top: -10px;
+	}
+
+	ul.leaders span+span {
+		float: right;
+		padding-left: 0.33em;
+		background-color: #E3EBD3;
+		position: relative;
+		z-index: 1
+	}
+
+	ul li {
+		padding-bottom: 40px;
+	}
+
+	.content {
+		padding-left: 12px;
+		padding-right: 12px;
+		box-sizing: border-box;
+	}
+
+	.genius {
+		width: 63.8vw;
+		height: 63.8vw;
+		padding: 30px 46px 53px 25px;
+	}
+
+	.feeling,
+	.moreno {
+		width: 31.4vw;
+		height: 31.4vw;
+	}
+
+	.first,
+	.fourth {
+		width: 65.9%;
+	}
+
+	.second,
+	.fifth {
+		width: 32.5%;
+		flex-direction: column;
+	}
+
+	.second .small-block,
+	.fifth .small-block {
+		width: 100%;
+	}
+
+	.fifth .lead {
+		margin-bottom: 10px;
+	}
+}
